@@ -53,5 +53,5 @@ process.on('warning', (warning) => {
 });
 
 process.on('exit', () => {
-  assert.deepStrictEqual(expectedWarnings, new Map());
+  assert.deepStrictEqual(new Map(), expectedWarnings);
 });
